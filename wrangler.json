@@ -1,6 +1,6 @@
 {
   "name": "royal-math-b5ef",
-  "main": "src/index.js",
+  "main": "index.js",
   "compatibility_date": "2026-08-12",
   "assets": {
     "directory": "./public",
