@@ -5,12 +5,15 @@
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",
-    "run_worker_first": ["/api/*", "/files/*"]
+    "run_worker_first": [
+      "/api/*",
+      "/files/*"
+    ]
   },
   "r2_buckets": [
     {
       "binding": "PORTFOLIO_IMAGES",
-      "bucket_name": "PORTFOLIO_IMAGES"
+      "bucket_name": "igor-ai-portfolio"
     }
   ]
 }
