@@ -67,6 +67,9 @@ footer{padding:30px 0;color:#777;display:flex;justify-content:space-between;font
 .upload-help{color:#777;font-size:12px;line-height:1.6;margin:10px 0 0}
 @media(max-width:640px){.upload-row{grid-template-columns:1fr}}
 
+
+.hero-fallback{display:none;position:absolute;inset:0;align-items:center;justify-content:center;text-align:center;background:#151412;color:var(--white);font-size:clamp(42px,8vw,100px);font-weight:700;line-height:.9;letter-spacing:-.06em}.hero-fallback span{font-family:"Playfair Display";font-weight:600;font-size:.42em;letter-spacing:.02em;color:var(--gold)}.hero-visual.image-fallback .hero-fallback{display:flex;flex-direction:column}.hero-visual.image-fallback:after{display:none}
+.portfolio{min-height:120px}.work.is-hidden{display:none!important}
 </style>
 </head>
 <body>
@@ -83,7 +86,7 @@ footer{padding:30px 0;color:#777;display:flex;justify-content:space-between;font
 <p class="lead">Створюю візуальні історії, рекламні концепції та креативи, які виглядають сучасно, дорого й запам'ятовуються.</p>
 <div class="actions"><a class="btn gold" href="#work">Переглянути роботи</a><a class="btn" href="#contact">Обговорити проєкт</a></div>
 </div>
-<div class="hero-visual"><img src="images/portrait.png" alt="Ігор — creative portfolio"></div>
+<div class="hero-visual"><img id="heroImage" src="/images/portrait.png" alt="Ігор — creative portfolio" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')"><div class="hero-fallback">IGOR.AI<br><span>CREATIVE PORTFOLIO</span></div></div>
 </section>
 
 <div class="marquee"><span>Advertising Design</span><span>AI Creative</span><span>Visual Stories</span><span>House Concepts</span><span>Advertising Design</span><span>AI Creative</span></div>
@@ -118,36 +121,36 @@ footer{padding:30px 0;color:#777;display:flex;justify-content:space-between;font
 </div>
 
 <div class="portfolio">
-<a class="work" data-category="advertising" href="images/Реклама/project-tomatoes.png" target="_blank">
-<img src="images/Реклама/project-tomatoes.png" alt="Домашні помідори"><div class="caption"><small>Реклама</small><strong>Домашні помідори</strong></div></a>
+<a class="work" data-category="advertising" href="/images/advertising/project-tomatoes.png" target="_blank">
+<img src="/images/advertising/project-tomatoes.png" alt="Домашні помідори"><div class="caption"><small>Реклама</small><strong>Домашні помідори</strong></div></a>
 
-<a class="work" data-category="advertising" href="images/Реклама/project-apples.png" target="_blank">
-<img src="images/Реклама/project-apples.png" alt="Натуральні яблука"><div class="caption"><small>Реклама</small><strong>Натуральні яблука</strong></div></a>
+<a class="work" data-category="advertising" href="/images/advertising/project-apples.png" target="_blank">
+<img src="/images/advertising/project-apples.png" alt="Натуральні яблука"><div class="caption"><small>Реклама</small><strong>Натуральні яблука</strong></div></a>
 
-<a class="work" data-category="brands" href="images/Бренди/project-perfume.png" target="_blank">
-<img src="images/Бренди/project-perfume.png" alt="Парфумерна реклама"><div class="caption"><small>Бренди</small><strong>The One</strong></div></a>
+<a class="work" data-category="brands" href="/images/brands/project-perfume.png" target="_blank">
+<img src="/images/brands/project-perfume.png" alt="Парфумерна реклама"><div class="caption"><small>Бренди</small><strong>The One</strong></div></a>
 
-<a class="work" data-category="brands" href="images/Бренди/project-nissan.png" target="_blank">
-<img src="images/Бренди/project-nissan.png" alt="Nissan campaign"><div class="caption"><small>Бренди</small><strong>Nissan — твій шлях</strong></div></a>
+<a class="work" data-category="brands" href="/images/brands/project-nissan.png" target="_blank">
+<img src="/images/brands/project-nissan.png" alt="Nissan campaign"><div class="caption"><small>Бренди</small><strong>Nissan — твій шлях</strong></div></a>
 
-<a class="work" data-category="stories" href="images/Казки_та_ілюстрації/project-dragon.png" target="_blank">
-<img src="images/Казки_та_ілюстрації/project-dragon.png" alt="Dragon Heart"><div class="caption"><small>Казки та ілюстрації</small><strong>Dragon Heart</strong></div></a>
+<a class="work" data-category="stories" href="/images/stories/project-dragon.png" target="_blank">
+<img src="/images/stories/project-dragon.png" alt="Dragon Heart"><div class="caption"><small>Казки та ілюстрації</small><strong>Dragon Heart</strong></div></a>
 
-<a class="work" data-category="advertising" href="images/Реклама/project-meat.png" target="_blank">
-<img src="images/Реклама/project-meat.png" alt="М'ясна реклама"><div class="caption"><small>Реклама</small><strong>Правдоруб</strong></div></a>
+<a class="work" data-category="advertising" href="/images/advertising/project-meat.png" target="_blank">
+<img src="/images/advertising/project-meat.png" alt="М'ясна реклама"><div class="caption"><small>Реклама</small><strong>Правдоруб</strong></div></a>
 
-<a class="work" data-category="advertising" href="images/Реклама/project-shampoo.png" target="_blank">
-<img src="images/Реклама/project-shampoo.png" alt="Clear Men"><div class="caption"><small>Реклама</small><strong>Clear Men</strong></div></a>
+<a class="work" data-category="advertising" href="/images/advertising/project-shampoo.png" target="_blank">
+<img src="/images/advertising/project-shampoo.png" alt="Clear Men"><div class="caption"><small>Реклама</small><strong>Clear Men</strong></div></a>
 
-<a class="work" data-category="advertising" href="images/Реклама/project-water.png" target="_blank">
-<img src="images/Реклама/project-water.png" alt="Вода"><div class="caption"><small>Реклама</small><strong>Природна свіжість</strong></div></a>
+<a class="work" data-category="advertising" href="/images/advertising/project-water.png" target="_blank">
+<img src="/images/advertising/project-water.png" alt="Вода"><div class="caption"><small>Реклама</small><strong>Природна свіжість</strong></div></a>
 
-<a class="work" data-category="advertising" href="images/Реклама/project-juice.png" target="_blank">
-<img src="images/Реклама/project-juice.png" alt="Натуральний сік"><div class="caption"><small>Реклама</small><strong>Смак здоров'я</strong></div></a>
+<a class="work" data-category="advertising" href="/images/advertising/project-juice.png" target="_blank">
+<img src="/images/advertising/project-juice.png" alt="Натуральний сік"><div class="caption"><small>Реклама</small><strong>Смак здоров'я</strong></div></a>
 </div>
 
 <div class="folder-note">
-<strong>Як додавати нові фото:</strong> завантажуйте зображення у відповідну папку всередині <code>images</code>, а потім додайте його картку в <code>index.html</code>. Папки <code>Будинки</code>, <code>Персонажі</code> та <code>Інше</code> вже підготовлені для майбутніх робіт.
+<strong>Як додавати нові фото:</strong> використовуйте форму нижче після введення адміністративного ключа. Нове фото зберігається у Cloudflare R2 і автоматично з'являється в портфоліо.
 </div>
 </div></section>
 
@@ -165,16 +168,19 @@ footer{padding:30px 0;color:#777;display:flex;justify-content:space-between;font
 
 
 <script>
-document.querySelectorAll('.folder-btn').forEach(function(button){
-  button.addEventListener('click', function(){
-    document.querySelectorAll('.folder-btn').forEach(function(b){b.classList.remove('active')});
-    button.classList.add('active');
-    var filter = button.dataset.filter;
-    document.querySelectorAll('.work').forEach(function(card){
-      card.classList.toggle('is-hidden', filter !== 'all' && card.dataset.category !== filter);
+(function(){
+  const buttons=[...document.querySelectorAll('.folder-btn')];
+  const cards=()=>[...document.querySelectorAll('.portfolio .work')];
+  function applyFilter(filter){
+    buttons.forEach(b=>b.classList.toggle('active',b.dataset.filter===filter));
+    cards().forEach(card=>{
+      const category=card.dataset.category || 'other';
+      card.classList.toggle('is-hidden',filter!=='all' && category!==filter);
     });
-  });
-});
+  }
+  buttons.forEach(button=>button.addEventListener('click',()=>applyFilter(button.dataset.filter||'all')));
+  window.applyPortfolioFilter=applyFilter;
+})();
 </script>
 
 
@@ -244,6 +250,8 @@ document.querySelectorAll('.folder-btn').forEach(function(button){
         a.innerHTML='<img src="'+a.href+'" alt="'+escapeHtml(item.title||'Завантажена робота')+'"><div class="caption"><small>'+label+'</small><strong>'+escapeHtml(item.title||'Завантажена робота')+'</strong></div>';
         grid.prepend(a);
       });
+      const active=document.querySelector('.folder-btn.active');
+      if(active && window.applyPortfolioFilter) window.applyPortfolioFilter(active.dataset.filter||'all');
     }catch(e){}
   }
   function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
